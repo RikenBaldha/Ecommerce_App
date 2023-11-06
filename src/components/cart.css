@@ -1,0 +1,163 @@
+.addmain {
+  display: inline-grid;
+  color: white;
+  background-color: #5566ba;
+  height: 430px;
+  padding: 15px;
+  margin: 15px;
+}
+.allmain {
+  margin: 0px auto;
+}
+.main1 a{
+  color: white;
+}
+
+.addproduct-image {
+  width: 200px;
+  height: 150px;
+}
+.headphone-image {
+  width: 350px;
+  margin: 5px auto;
+  height: 257px;
+}
+.laptop-image {
+  width: 350px;
+  margin: 5px auto;
+  height: 257px;
+}
+.tv-image {
+  width: 350px;
+  margin: 5px auto;
+  height: 257px;
+}
+.ac-image {
+  width: 350px;
+  margin: 5px auto;
+  height: 200px;
+}
+.all-cart{
+  
+}
+.cart {
+  display: flex;
+  color: white;
+  background-color: #3F51B5;
+  padding: 10px;
+  margin: 10px;
+}
+
+.cart p {
+  width: 400px;
+  padding: 22px;
+  font-size: 18px;
+}
+
+.cart-btn-cart {
+  cursor: pointer;
+  height: 45px;
+  margin: 10px;
+  background-color: cyan;
+}
+.cart-btn-sort {
+  position: absolute;
+  cursor: pointer;
+  height: 45px;
+  margin: 10px;
+  background-color: cyan;
+  top: 124px;
+  right: 0px;
+  width: 113px;
+}
+.cart-btn-high {
+  position: absolute;
+  cursor: pointer;
+  height: 45px;
+  margin: 10px;
+  background-color: cyan;
+  top: 73px;
+  right: 0px;
+  width: 113px;
+}
+.cart-btn-review {
+  position: absolute;
+  cursor: pointer;
+  height: 45px;
+  margin: 10px;
+  background-color: cyan;
+  top: 176px;
+  right: 0px;
+  width: 113px;
+}
+
+p .onadd{
+  font-size: 16px;
+  width: 25px;  
+  cursor: pointer;
+}
+p .onremove{
+  cursor: pointer;
+  font-size: 16px;
+  width: 25px;
+  /* margin-left: -30px; */
+}
+
+.all-products{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.allp{
+  font-size: 17px;
+  margin: 10px 5px;
+}
+.all-p{
+  font-size: 20px;
+  color: yellow;
+}
+.total-amount{
+  /* display: block; */
+    float: right;
+    font-size: 22px;
+    padding: 10px;
+    background-color: yellow;
+    margin-right: 120px;
+}
+
+.all-order{
+  color: white;
+    font-size: 33px;
+    display: flex;
+    justify-content: center;
+}
+.all-order span{
+  margin: 0px;
+}
+
+.place-order{
+  /* display: block; */
+  border: none;
+    float: right;
+    font-size: 22px;
+    padding: 10px;
+    background-color: yellow;
+    /* margin-right: 60px; */
+    cursor: pointer;
+    margin: 80px -140px;
+}
+.track-order{
+  border: none;
+  float: right;
+  font-size: 22px;
+  padding: 10px;
+  background-color: yellow;
+  /* margin-right: 60px; */
+  cursor: pointer;
+  /* margin: 80px -140px; */
+  margin-right: 55px;
+  margin-bottom: 15px;
+}
+.place-order:hover {
+  background-color: rgb(183, 183, 70);
+}

@@ -1,0 +1,362 @@
+
+
+#root {
+  /* display: fl
+    
+  /* margin: -9px -8px; */
+  background: #4b6cb7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* width: fit-content; */
+}
+.why {
+  /* display: flex; */
+}
+.navbar-brand{
+  z-index: 0;
+}
+.navbar {
+  background-color: #004efc !important;
+  z-index: 1000;
+  width: 100%;
+  height: 80px;
+  /* background-color: #2196f3; */
+  background-color: #3366FF;
+  /* border-radius: 15px; */
+  background-image: -webkit-linear-gradient(0deg, rgba(255, 255, 257, 0.5) 25%, transparent 99%, transparent 90%, rgba(255, 255, 255, 0.5) 21%, rgba(255, 255, 255, 0.5) -3%, transparent 94%, transparent);
+
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  /* display: inline-block; */
+}
+.navbar-nav {
+  float: right;
+  margin-right: 26px;
+  
+}
+.navbar-collapse {
+  /* background: #d9bbbb; */
+  z-index: 1001
+}
+.navbar li {
+  display: inline;
+}
+.logo {
+  display: flex;
+    align-items: center;
+    padding: 10px
+}
+
+.contact {
+  margin: 10px;
+}
+.shop {
+  color: rgb(255, 255, 255);
+}
+
+.red{
+  color: red;
+}
+.black{
+color: black;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin: 0px 20px;
+  font-size: 25px;
+}
+.cart1 {
+  display: inline;
+    margin-right: 55px;
+}
+.item {
+  position: relative;
+  color: white;
+  top: -41px;
+  left: -22px;
+}
+.as{
+  display: contents;
+  margin-left: 58%;
+}
+.total {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  /* position: relative;
+    top: -44px;
+    left: -26px; */
+}
+.main {
+  margin: auto 0px;
+}
+.btn {
+  cursor: pointer;
+  padding: 10px 40px;
+  background-color: black;
+  color: white;
+}
+
+.main1 {
+  color: white;
+  background: #7474BF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* height: 700px; */
+    width: 233px;
+  padding: 10px;
+  margin: 15px;
+  display: inline-grid;
+}
+
+.card-img-top{
+  padding: 15px;
+  transition: padding 0.5s ease;
+}
+.card-img-top:hover{
+  padding: 4px;
+}
+.product-image {
+  height: 207px;
+    width: 100%;
+    padding: 10px;
+}
+.link {
+  color: white;
+  text-decoration: underline;
+  font-size: 18px;
+  margin-left: 0px;
+}
+.cart-btn {
+
+  cursor: pointer;
+  width: 125px;
+  background-color: black;
+  color: white;
+  margin: 5px 10px;
+  padding: 10px;
+}
+.login {
+  cursor: pointer;
+  /* background-color: red; */
+  padding: 10px;
+  position: relative;
+  left: 85px;
+}
+.sort1{
+  top: 70px !important;
+}
+.sort2{
+  top: 130px !important;
+}
+
+.login-out {
+  cursor: pointer;
+  background-color: red;
+  padding: 10px;
+  position: relative;
+  top: -24px;
+}
+.login-logo {
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+.links {
+  margin-right: 60px;
+  margin-left: 72px;
+}
+
+.login-details {
+}
+
+/* General CSS */
+/* Your existing CSS */
+
+/* Media Query for 420px */
+@media only screen and (max-width: 425px) {
+  .navbar {
+    height: 50px;
+  }
+
+.sort1{
+  top: 70px !important;
+}
+.sort2{
+  top: 130px !important;
+}
+  .logo {
+    padding: 5px;
+  }
+  .all-products {
+  display: flex;
+  flex-direction: column;
+  
+ }
+  a {
+    margin: 0px 10px;
+    font-size: 18px;
+  }
+
+  .item {
+    top: -26px;
+    left: -14px;
+  }
+
+  .as {
+    margin-left: 48%;
+  }
+
+  .main1 {
+    width: auto;
+    height: auto;
+  }
+
+  .login {
+    left: 40px;
+  }
+
+  .login-out {
+    top: -15px;
+  }
+}
+
+@media only screen and (min-width:425px) and (max-width: 601px) {
+  /* Modify the CSS accordingly for smaller devices */
+  .navbar {
+    height: 60px;
+  }
+  .sort1{
+    top: 70px !important;
+  }
+  .sort2{
+    top: 130px !important;
+  }
+  .logo {
+    padding: 5px;
+  }
+  .cart{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .addproduct-image{
+    width: -webkit-fill-available;
+    height: 200px;
+  }
+  a {
+    margin: 0px 10px;
+    font-size: 20px;
+  }
+  
+
+  .item {
+    top: -31px;
+    left: -16px;
+  }
+
+  .as {
+    margin-left: 50%;
+  }
+
+  .main1 {
+    width: 242px;
+  }
+
+  .login {
+    left: 50px;
+  }
+
+  .login-out {
+    top: -18px;
+  }
+}
+
+/* For medium devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Modify the CSS accordingly for medium devices */
+  .navbar {
+    height: 70px;
+  }
+
+  .logo {
+    padding: 8px;
+  }
+  .sort1{
+    top: 80px !important;
+  }
+  .sort2{
+    top: 150px !important;
+  }
+  a {
+    margin: 0px 15px;
+    font-size: 22px;
+  }
+
+  .item {
+    top: -36px;
+    left: -19px;
+  }
+
+  .as {
+    margin-left: 55%;
+  }
+
+  .main1 {
+    width: 180px;
+  }
+
+  .login {
+    left: 65px;
+  }
+
+  .login-out {
+    top: -21px;
+  }
+}
+
+/* For large devices */
+@media only screen and (min-width: 1025px) {
+  /* Modify the CSS accordingly for large devices */
+  .navbar {
+    height: 80px;
+  }
+
+  .logo {
+    padding: 10px;
+  }
+  .sort1{
+    top: 80px !important;
+  }
+  .sort2{
+    top: 150px !important;
+  }
+  a {
+    margin: 0px 20px;
+    font-size: 25px;
+  }
+
+  .item {
+    top: -41px;
+    left: -22px;
+  }
+
+  .as {
+    margin-left: 58%;
+  }
+
+  .main1 {
+    width: 233px;
+  }
+
+  .login {
+    left: 85px;
+  }
+
+  .login-out {
+    top: -24px;
+  }
+}
