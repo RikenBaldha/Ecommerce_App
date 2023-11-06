@@ -2,7 +2,7 @@
   "name": "ecommerce",
   "version": "0.1.0",
   "private": true,
-  "homepage" :"https://RikenBaldha/Ecommerce_App",
+  "homepage" :"https://RikenBaldha.github.io/Ecommerce_App",
   "dependencies": {
     "@auth0/auth0-react": "^2.2.1",
     "@emotion/react": "^11.11.1",
