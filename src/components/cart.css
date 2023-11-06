@@ -118,11 +118,12 @@ p .onremove{
 }
 .total-amount{
   /* display: block; */
-    float: right;
+    float: left;
     font-size: 22px;
     padding: 10px;
     background-color: yellow;
-    margin-right: 120px;
+    margin: 10px 5px;
+    /* margin-right: 120px; */
 }
 
 .all-order{
@@ -138,13 +139,14 @@ p .onremove{
 .place-order{
   /* display: block; */
   border: none;
-    float: right;
+    float: left;
     font-size: 22px;
     padding: 10px;
     background-color: yellow;
     /* margin-right: 60px; */
     cursor: pointer;
-    margin: 80px -140px;
+    margin: 10px 5px;
+    /* margin: 80px -140px; */
 }
 .track-order{
   border: none;

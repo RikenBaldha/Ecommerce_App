@@ -5,6 +5,7 @@ import "./placeorder.css";
 import React, { useState } from "react";
 import Animation from "./Animation";
 function Placeorder({ total ,abc,setabc,carditem , order , setorder ,setCart ,setTotal}) {
+ document.title = "Payment Page"
   const [succesfull, setsuccesfull] = useState("");
   const [card, setCard] = useState({
     cardno: "",

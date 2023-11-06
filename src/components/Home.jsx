@@ -1,8 +1,12 @@
 import React from 'react'
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 import { Link } from 'react-router-dom';
 
 function Home({onAddToCart , all , setall}) {
+
+  useEffect(() => {
+    document.title = "Home";  
+  }, []);
     const [searchTerm, setSearchTerm] = useState("");
     const [filteredProducts, setFilteredProducts] = useState(all);
     const [maxPrice, setMaxPrice] = useState("");

@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Product({products,onAddToCart, setProducts , addtocart,small,medium ,large,verylarge}) {     
- 
+  document.title = "Electronic"
   // const numProductsToDisplay = 150;
 
   // // Create a shallow copy of the products array

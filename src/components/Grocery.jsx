@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Grocery({ onAddToCart ,grocery }) {
 
-
+document.title = "Grocery"
   const numProductsToDisplay = 150;
   let randomProducts = [...grocery];
 

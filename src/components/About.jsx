@@ -1,6 +1,7 @@
 import React from 'react'
 import "./about.css"
 function About() {
+  document.title = "About Us"
   return (
     <>
     <div className="about-us-container">

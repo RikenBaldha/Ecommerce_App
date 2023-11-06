@@ -12,6 +12,7 @@ function Productdetails({ gym, all, onAddToCart , showPopup , setShowPopup}) {
   let { productId } = useParams();
   const [product, setProduct] = useState([]);
   const [price, setprice] = useState(0);
+  document.title = `product | ${productId} `
 
   useEffect(() => {
     const filteredProducts = all.filter(

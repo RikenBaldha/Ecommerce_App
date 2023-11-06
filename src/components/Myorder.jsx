@@ -19,6 +19,7 @@ function Myorder({
   total,
 }) {
   // console.log(order);
+  document.title ="My Order"
   const[mycolor,setmycolor] = useState("block")
   useEffect(() => {
     if (order.length === 0) {

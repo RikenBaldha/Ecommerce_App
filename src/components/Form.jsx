@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { CloudLightning } from "phosphor-react";
 
 function Form() {
+  document.title = "Form"
   const [name, setName] = useState("");
   const [number, setnumber] = useState("");
   const [email, setEmail] = useState("");

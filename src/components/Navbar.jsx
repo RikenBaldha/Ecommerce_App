@@ -63,6 +63,7 @@ const Navbar = ({ cart, total }) => {
           </div>
         </div>
       </nav>
+      
     </>
   );
 };
