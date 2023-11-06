@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/RikenBaldha/Ecommerce_App.git/static/css/main.9068f6e9.css",
+    "main.js": "/RikenBaldha/Ecommerce_App.git/static/js/main.a86b84d4.js",
+    "index.html": "/RikenBaldha/Ecommerce_App.git/index.html",
+    "main.9068f6e9.css.map": "/RikenBaldha/Ecommerce_App.git/static/css/main.9068f6e9.css.map",
+    "main.a86b84d4.js.map": "/RikenBaldha/Ecommerce_App.git/static/js/main.a86b84d4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9068f6e9.css",
+    "static/js/main.a86b84d4.js"
+  ]
+}
