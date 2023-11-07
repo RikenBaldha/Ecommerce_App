@@ -35,20 +35,70 @@ function Myorder({
         {order && Array.isArray(order)
           ? order.map((productItem, index) => (
               <div key={index} className="cart">
-                <img
-                  className="addproduct-image"
-                  src={productItem.product_photo}
-                  alt=""
-                />
-                <p>{productItem.product_title}</p>
-                <p>Quantity :- 1</p>
-                <p>
-                  Price:{" ₹ "}
-                  {productItem.product_price
-                    .slice(1)
-                    .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-                  /-
-                </p>
+                <div className="allcard mb-3 col-md-11  ">
+                  <div className="row g-0">
+                    <div className="col-md-4">
+                      <img
+                        src={productItem.product_photo}
+                        className="img-fluid rounded-start"
+                        alt="..."
+                      />
+                    </div>
+                    <div className="col-md-8">
+                      <div className="card-body">
+                        {/* <h5 className="card-title">Card title</h5> */}
+                        <br />
+                        <p className="card-text" style={{ color: "black" }}>
+                          {productItem.product_title}...                          
+                        </p>
+                        {/* <p className="card-text" style={{ color: "black" }}>
+                          Quantity :- 
+                          <button
+                            className="onremove"
+                            onClick={() =>
+                              {onremove(productItem.product_title, productItem)
+                            
+                              }
+                              }
+                              >
+                            -
+                          </button>
+                         
+                          {productItem.quantity}
+                          <button
+                            className="onadd"
+                            onClick={() =>
+                             { onadd(productItem.product_title, productItem)
+                          
+                            }
+                            }
+                          >
+                            +
+                          </button>                        
+                        </p> */}
+                        <p className="card-text">
+                         Quantity :- 1
+                        </p>
+                        <p className="card-text">
+                          Price:{" ₹ "}
+                          {productItem.product_price
+                            .slice(1)
+                            .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                          /-
+                        </p>
+                        {/* <p className="card-text">
+                          <button
+                            className="cart-btn-cart"
+                            onClick={() => onRemoveToCart(productItem)}
+                          >
+                            Remove Item
+                          </button>
+                        </p> */}
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             ))
           : "Your cart is empty"}

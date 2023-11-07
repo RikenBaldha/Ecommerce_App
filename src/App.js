@@ -7255,6 +7255,7 @@ function App() {
         {/* <Route path={`/${all.productItem.asin}`} element={<My all={all} />} /> */}
         <Route path='/myorder' element={<Myorder products={products}
         order={order}
+        cart={cart}
             total={total}
             setProducts={setProducts}
             carditem={carditem}

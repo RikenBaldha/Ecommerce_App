@@ -49,10 +49,11 @@
 }
 
 .cart p {
-  width: 400px;
+  /* width: 400px; */
   padding: 22px;
   font-size: 18px;
 }
+
 
 .cart-btn-cart {
   cursor: pointer;
@@ -162,4 +163,15 @@ p .onremove{
 }
 .place-order:hover {
   background-color: rgb(183, 183, 70);
+}
+
+@media only screen and (max-width: 500px) {
+.cart-btn-cart{
+
+  padding: 10px 10px;
+  font-size: 14px;
+}
+.card-text{
+  padding: 10px !important;
+}
 }
