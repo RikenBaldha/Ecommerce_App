@@ -31,16 +31,30 @@ background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, F
   /* display: inline-block; */
 }
 .navbar-nav {
-  float: right;
-  margin-right: 26px;
+  /* float: right; */
+  /* margin-right: 26px; */
   
 }
 .navbar-collapse {
-  /* background: #d9bbbb; */
-  z-index: 1001
+  background-color: #004efc ;
+  background-image: -webkit-linear-gradient(0deg, rgba(255, 255, 257, 0.5) 25%, transparent 99%, transparent 90%, rgba(255, 255, 255, 0.5) 21%, rgba(255, 255, 255, 0.5) -3%, transparent 94%, transparent);
+  z-index: 1001;
+  border: none;
+  margin-left: -12px;
 }
+
 .navbar li {
   display: inline;
+}
+@media only screen and (max-width: 992px) {
+.navbar li {
+  margin: 0px auto;
+  display: inline;
+}
+.red{
+  margin: 5px auto;
+  color: red;
+}
 }
 .logo {
   display: flex;
