@@ -1,18 +1,5 @@
 
 
-#root {
-  /* display: fl
-    
-  /* margin: -9px -8px; */
-
-  /* background: #4b6cb7;  fallback for old browsers */
-/* background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  Chrome 10-25, Safari 5.1-6 */
-/* background: linear-gradient(to right, #182848, #4b6cb7); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-/* width: fit-content; */
-}
-.why {
-  /* display: flex; */
-}
 .navbar-brand{
   z-index: 0;
 }
@@ -24,11 +11,6 @@
   position: sticky;
   top: 0px;
  background-color: #79addc !important;
-}
-.navbar-nav {
-  /* float: right; */
-  /* margin-right: 26px; */
-  
 }
 .navbar-collapse {
   background-color: #79addc ;
@@ -185,9 +167,6 @@ a {
 .links {
   margin-right: 60px;
   margin-left: 72px;
-}
-
-.login-details {
 }
 
 /* General CSS */
