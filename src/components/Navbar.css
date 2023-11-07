@@ -39,6 +39,10 @@
   color: yellow;
   text-decoration:underline;
 }
+.img{
+  margin: 0px auto !important;
+}
+
 
 }
 .logo {
