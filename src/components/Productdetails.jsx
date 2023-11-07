@@ -5,7 +5,7 @@ import "./product-details.css";
 import PopUp from "./PopUp";
 // import { useNavigate } from "react-router-dom";
 
-function Productdetails({ gym, all, onAddToCart , showPopup , setShowPopup}) {
+function Productdetails({ gym, all, onAddToCart,remove , showPopup , setShowPopup}) {
   // const [showPopup, setShowPopup] = useState(false);
 
   const navigate = useNavigate();
@@ -44,64 +44,6 @@ else{
     <>
       {product.map((productItem, index) => (
         <div key={index} className="product-details">
-          {/* <div className="part-a">
-            <img
-              className="product-details-image"
-              src={productItem.product_photo}
-              alt=""
-            />
-          </div>
-
-          <div className="part-b">
-            <p className="allp">{productItem.product_title}...</p>
-            <p>Product Review: {productItem.product_num_ratings}</p>
-            <p>Product Rating: {productItem.product_star_rating} Out Of 5</p>
-            <p className="allp">
-              Original Price:{" "}
-              {productItem.product_original_price
-                ? productItem.product_original_price
-                : "Not available"}
-              /-
-            </p>
-
-            <p className="all-p">
-              Discount-Price:{" "}
-              <span style={{ color: "#d5b0b0" }}>{discount}% Off</span>{" "}
-              {productItem.product_price}/-
-            </p>
-            <p className="allp">
-              More About Products:{" "}
-              <a
-                className="link"
-                href={productItem.product_url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Link
-              </a>
-            </p>
-            <button
-              onClick={() => onAddToCart(productItem)}
-              className="cart-btn"
-            >
-              Add To Cart
-            </button>
-
-            <Link
-              style={{
-                backgroundColor: "black",
-                color: "white",
-                padding: "10px",
-                fontSize: "20px",
-                width: "100px",
-                cursor: "pointer",
-              }}
-              to="/cart"
-            >
-              Go to Cart
-            </Link>
-          </div> */}
-
           <div className="allcard mb-3">
             <div className="row g-0">
               <div className="col-md-4">
@@ -113,34 +55,35 @@ else{
               </div>
               <div className="col-md-8">
                 <div className="card-body">
-                  {/* <h5 className="card-title">Card title</h5> */}
                   <p className="card-text" style={{ color: "black" }}>
                     {productItem.product_title}...
                   </p>
                   <p className="card-text">
                     <small className="text-body-secondary">
-                      Product Review: {productItem.product_num_ratings}
+                    Product Review<span style={{color:"yellow"}}>: {productItem.product_num_ratings}</span>
                     </small>
                   </p>
                   <p className="card-text">
                     <small className="text-body-secondary">
-                      Product Rating: {productItem.product_star_rating} Out Of 5
+                    Product Review:<span style={{color:"yellow"}}> {productItem.product_star_rating} Out Of 5</span>
                     </small>
                   </p>
                   <p className="card-text">
                     <small className="text-body-secondary">
                       Original Price:{" "}
-                      {productItem.product_original_price && productItem.product_original_price !== null
+                      <span style={{color:"yellow"}}> {productItem.product_original_price && productItem.product_original_price !== null
                         ? productItem.product_original_price
                         : "Not available"}
-                      /-
+                      /-</span>
                     </small>
                   </p>
                   <p className="card-text">
                     <small className="text-body-secondary">
-                      Discount-Price:{" "}
-                      <span style={{ color: "#d5b0b0" }}>{discount}% Off</span>{" "}
-                      {productItem.product_price}/-
+                      Price:{" "}
+                      <span style={{ color: "#605151" }}>{discount}% Off</span>{" "}
+                      <span style={{textDecoration:'line-through',color:"#605151",fontSize:"18px"}}>{productItem.product_original_price && productItem.product_original_price !== null
+                        ? productItem.product_original_price
+                        : "Not available"}</span>{" "}<span style={{color:"yellow"}}> {productItem.product_price}/-</span>
                     </small>
                   </p>
                   <p className="card-text">
@@ -155,55 +98,18 @@ else{
                       </a>
                     </small>
                   </p>
-                  {/* <button
-                    onClick={() => {
-                      onAddToCart(productItem);
-                      setShowPopup(true);
-                    }}
-                    className="cart-btn"
-                  >
-                    Add To Cart
-                  </button>
-                  {/* {showPopup && <PopUp />} */}
-       
                   <button
                     onClick={() => {
                       onAddToCart(productItem);
-                      // setShowPopup(true);
-                      // setTimeout(() => {
-                      //   setShowPopup(false);
-                      // }, 1000); // 1000 milliseconds = 1 second
                     }}
                     className="cart-btn"
                   >
                     Add To Cart
                   </button>
-                  {showPopup && <PopUp />}
-                  {/* <button onClick={ongotocart} className="cart-btn">
-                    Go to Cart
-                  </button> */}
                   <button onClick={ongotocart} className="cart-btn">
                     Go to Cart
                   </button>
-
-                  {/* <Link
-              style={{
-                backgroundColor: "black",
-                color: "white", 
-                padding: "10px",
-                fontSize: "20px",
-                width: "100px",
-                cursor: "pointer",
-              }}
-              to="/cart"
-            >
-              Go to Cart
-            </Link> */}
-                  {/* <p className="card-text">
-                    <small className="text-body-secondary">
-                      Last updated 3 mins ago
-                    </small>
-                  </p> */}
+                  {showPopup && <PopUp remove={remove}/>}
                 </div>
               </div>
             </div>

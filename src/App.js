@@ -7107,21 +7107,21 @@ function App() {
 
   const [all, setall] = useState(randomProducts1);
   
-  const [remove,setremove] = useState()
+  const [remove,setremove] = useState("")
   const [add, setadd] = useState(0)
   const [showPopup, setShowPopup] = useState(false);
   const handleAddToCart = (product) => {
     const isProductInCart = carditem.some((item) => item.asin === product.asin);
     
-   
   if (!isProductInCart) {
     setCart(cart + 1);
     setTotal(total + Number(product.product_price.slice(1).replace(/,/g, "")));
     setCardItem([...carditem, product]);
+    // setremove('Woohoo, Item Added To Cart' )
     if (!showPopup) {
       setShowPopup(true);
       // setremove("Woohoo, Item Add To Cart")
-      setremove({ message: 'Woohoo, Item Added To Cart' })
+      setremove('Woohoo, Item Added To Cart' )
       setTimeout(() => {
         setShowPopup(false);
       }, 1500);
@@ -7185,7 +7185,7 @@ function App() {
   
       setShowPopup(true);
       // setremove("Item will Remove From Cart")
-      setremove({message:"Item will Remove From Cart"})
+      setremove("Item will Remove From Cart")
       setTimeout(() => {
         setShowPopup(false);
       }, 1500);
@@ -7246,11 +7246,11 @@ function App() {
         <Route path='/grocery' element={<Grocery grocery={grocery} onAddToCart={(product) => handleAddToCart(product)}  />} />
         <Route path='/placeorder' element={<Placeorder total={total} carditem={carditem}  abc={abc}
             setabc={setabc} order={order} setorder={setorder} setCart={setCart}  setTotal={setTotal} />} />
-        <Route path="/:productId" element={ <Productdetails showPopup={showPopup} setShowPopup={setShowPopup}all={all} gym={gym} productId={productId} onAddToCart={(product) => handleAddToCart(product)}/>} />
+        <Route path="/:productId" element={ <Productdetails remove={remove}showPopup={showPopup} setShowPopup={setShowPopup}all={all} gym={gym} productId={productId} onAddToCart={(product) => handleAddToCart(product)}/>} />
         <Route path="/form" element={<Form />}/>
         <Route path="/animation" element={<Animation />}/>
         <Route path="/same" element={<Same all={all} />}/>
-        <Route path="/popup" element={<PopUp />}/>
+        <Route path="/popup" element={<PopUp remove={remove} />}/>
         <Route path='/gym' element={<Gym gym={gym}onAddToCart={(product) => handleAddToCart(product)}  />} />
         {/* <Route path={`/${all.productItem.asin}`} element={<My all={all} />} /> */}
         <Route path='/myorder' element={<Myorder products={products}
